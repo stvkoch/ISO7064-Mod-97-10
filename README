@@ -1,0 +1,13 @@
+require 'ISO7064Mod97_10.php'
+$c = new ISO7064Mod97_10()
+
+$n = 107571
+$yourNum = $c->encode($n)
+var_dump($yourNum)
+//int(10757107)
+var_dump($c->verify($yourNum))
+
+$validNumber = '10757107'
+$invalidNumber = '10767107'
+var_dump($c->verify($validNumber))
+var_dump($c->verify($invalidNumber))
