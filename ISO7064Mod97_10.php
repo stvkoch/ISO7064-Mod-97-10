@@ -19,7 +19,7 @@ class ISO7064Mod97_10{
 	
 	function encode($str){
 		
-	  $c = $this->checkCode("${str}00");
+	  $c = $this->checkCode("$str");
 	  if($c == 0){
 	    return (int)"${str}00";
 	  }elseif($c < 10) {
@@ -33,8 +33,7 @@ class ISO7064Mod97_10{
 	}
 	
 	function checkCode($str){
-		//$this->computeCheck($str);
-		return ( 98 - ($this->computeCheck("$str")%97) );
+		return ( 98 - ($this->computeCheck("${str}00") % 97 ) );
 	}
 	
 	function computeCheck($str)
