@@ -3,4 +3,4 @@ php:
   - 5.3
   
   
-script: phpunit Tests/MainTest
+script: phpunit Tests/*
