@@ -1,6 +1,6 @@
 <?php
 
-  require 'ISO7064Mod97_10.php';
+  require '../ISO7064Mod97_10.php';
 
 class MainTest extends PHPUnit_Framework_TestCase
 {
