@@ -1,4 +1,4 @@
-!https://secure.travis-ci.org/stvkoch/ISO7064-Mod-97-10.png(Build Status)!:http://travis-ci.org/stvkoch/ISO7064-Mod-97-10
+[![Build Status](https://secure.travis-ci.org/stvkoch/ISO7064-Mod-97-10.png)](http://travis-ci.org/stvkoch/ISO7064-Mod-97-10)
 
 
 Description
