@@ -4,7 +4,7 @@
 Description
 ===========
 
-Algoritmo que calcula numero de controle, descrito em ISO 7064, Mod 97 10. Normalmente usado para validar IBAN e NIBs de contas bancárias.
+Algorithm that calculates number of control, described in ISO 7064, Mod 97 10. Normally used to validate IBAN and nibs of bank accounts.
 
 
 Methods
@@ -40,4 +40,4 @@ Example
     var_dump($c->verify($invalidNumber));
 
 
-Qualquer dúvida entre em contacto <stvkoch at gmail.com> Steven Koch
+ <stvkoch at gmail.com> Steven Koch
