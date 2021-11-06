@@ -40,11 +40,13 @@ class ISO7064Mod97_10{
 	{
 		$ai=1;
 		$ch = ord($str[strlen($str)-1]) - 48;
-    if ($ch < 0 || $ch > 9) return false;
+		
+		if ($ch < 0 || $ch > 9) return 0;
+		
 		$check=$ch;
 		for($i=strlen($str)-2;$i>=0;$i--){
 			$ch = ord($str[$i]) - 48;
-	    if ($ch < 0 || $ch > 9) return false;
+			if ($ch < 0 || $ch > 9) return 0;
 			$ai=($ai*10)%97;
 			$check+= ($ai * ((int)$ch));
 		}
